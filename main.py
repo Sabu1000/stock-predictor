@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 import os
 
 # set settings
-stock_symbol = 'AAPL'
+stock_symbol = input("Enter stock ticker (e.g. AAPL, TSLA, MSFT): ").upper()
 start_date = '2018-01-01'
 end_date = '2024-12-31'
-data_path = 'data/aapl.csv'
+data_path = f'data/{stock_symbol.lower()}.csv'
 
 # download stock data
 print(f"Downloading {stock_symbol} data from {start_date} to {end_date}...")
